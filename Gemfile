@@ -47,16 +47,13 @@ group :development do
 
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
-end
-
-# Use sqlite3 as the database for Active Record
- group :development do 
-   gem 'sqlite3'
+  
+  # Use sqlite3 as the database for Active Record
+  gem 'sqlite3'
 end
 
 # Use postgresql as the database for production 
 group :production do 
-  gem 'pg'
-  gem 'rails_12factor'
+  gem 'sqlite3'
 end 
 
