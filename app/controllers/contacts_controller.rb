@@ -13,6 +13,7 @@ class ContactsController < ApplicationController
             Rails.logger.debug(name);  
             Rails.logger.debug(email);
             Rails.logger.debug(body);
+            Rails.logger.debug(ContactMailer);
             #ContactMailer.contact_email(name, email, body).deliver
                     
             flash[:success] = 'Message sent.'
