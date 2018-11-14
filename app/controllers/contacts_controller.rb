@@ -10,7 +10,9 @@ class ContactsController < ApplicationController
             name = params[:contact][:name]
             email = params[:contact][:email]
             body = params[:contact][:comments]
-                    
+            Rails.logger.message(name);  
+            Rails.logger.message(email);
+            Rails.logger.message(body);
             #ContactMailer.contact_email(name, email, body).deliver
                     
             flash[:success] = 'Message sent.'
