@@ -52,12 +52,11 @@ group :development do
   gem 'sqlite3'
 end
 # Use sqlite3 as the database for Active Record
- group :development do 
-   gem 'sqlite3'
-end
+
+
 # Use postgresql as the database for production 
 group :production do 
-  gem 'pg'
+  gem 'pg', '~> 0.20'
   gem 'rails_12factor'
 end 
 
