@@ -65,3 +65,6 @@ gem 'devise', '4.2.0'
 gem 'stripe', '1.57.1'
 # use figaro to  hide secrete keys
 gem 'figaro', '1.1.1'
+
+# use paperclip for image uploads
+gem 'paperclip', '4.3.6'
